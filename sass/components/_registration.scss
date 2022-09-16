@@ -1,0 +1,65 @@
+.reg {
+    @extend .section;
+    background-color: #191C26;
+    color: #FFFFFF;
+}
+
+.reg__container {
+    @extend .container;
+    text-align: center;
+}
+
+.reg__title {
+    @extend.section__title;
+    margin-top: 0;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.reg__field {
+    position: relative;
+    margin-top: 44px;
+        
+    // outline: 1px dashed white;
+}
+
+.reg__label {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+
+}
+.reg__input {
+    width: 100%;
+    padding: 8px 4px;
+    
+    background-color: #191C26;
+    color: #FFFFFF;
+    outline: #191C26;
+    border: none;
+    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+    
+}
+
+.reg__textarea {
+    width: 100%;
+        padding: 8px 4px;
+    resize: none;
+        background-color: #191C26;
+        color: #FFFFFF;
+        outline: #191C26;
+        border: none;
+        border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+
+.button-send {
+    @extend %button;
+    margin-top: 44px;
+    color: #FFFFFF;
+    background-color: transparent;
+    
+}

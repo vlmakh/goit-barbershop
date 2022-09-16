@@ -1,0 +1,27 @@
+@import './base/fonts';
+@import './base/normalize';
+@import './utils/variables';
+
+@import './utils/visually-hidden';
+@import './utils/placeholders';
+
+@import './base/body';
+// @import './components/logo';
+@import './components/header';
+
+// @import './components/page-header-nav';
+// @import './components/page-header-cont';
+@import './components/hero';
+@import './components/about';
+@import './components/prices';
+@import './components/benefits';
+@import './components/team';
+@import './components/facts';
+@import './components/registration';
+@import './components/contacts';
+// @import './components/modal-form';
+
+
+@import './components/footer';
+
+// @import './components/footer-bottom';

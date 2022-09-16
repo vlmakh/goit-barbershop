@@ -1,0 +1,46 @@
+.about {
+    @extend .section;
+}
+
+.about__container {
+    @extend .container;
+}
+
+.about__label {
+    @extend .label;
+
+}
+
+.about__label::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    display: inline-block;
+    background-color: $color-primary;
+}
+
+.about__title {
+    @extend .section__title;
+    font-size: 28px;
+}
+
+.about__text {
+   @extend .text;
+        line-height: 1.36;
+        
+        color: #555555;
+}
+
+.button-order--about {
+    @extend %button;
+    margin-top: 50px;
+    
+    transition: color $duration $timing-function,
+    background-color $duration $timing-function;
+
+    &:hover, &:focus {
+        background-color: $color-accent;
+        color: $color-bcg;
+    }
+}

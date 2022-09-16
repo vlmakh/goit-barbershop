@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Best BarberShop</title>
+  </head>
+
+  <body>
+    <header class="page-header" data-header>
+      <a href="#" class="logo">
+        <img src="./images/logo.svg" alt="logo" width="69" height="56" />
+      </a>
+      <button type="button" class="mobile-menu-button" data-menu-open>
+        <svg width="24" height="24">
+          <use class="icon" href="./images/icons.svg#icon-menu"></use>
+        </svg>
+      </button>
+
+      <div class="backdrop" data-menu>
+        <div class="mobile-menu">
+          <button type="button" class="mobile-close-button" data-menu-close>
+            <svg width="30" height="30">
+              <use class="icon" href="./images/icons.svg#mobile-close"></use>
+            </svg>
+          </button>
+
+          <nav>
+            <ul class="nav__list" data-nav>
+              <li class="nav__item">
+                <a href="#about" class="nav__link">Про нас</a>
+              </li>
+              <li class="nav__item">
+                <a href="#prices" class="nav__link">Послуги та ціни</a>
+              </li>
+              <li class="nav__item">
+                <a href="#team" class="nav__link">Майстри</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contacts" class="nav__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <p class="mob-menu__cont">+38 044 111 11 11</p>
+          <button type="button" class="button-order--mob">онлайн-запис</button>
+          <ul class="social__list--mob">
+            <!-- <li class="social__item"></li> -->
+            <li class="social__item--mob">
+              <a href="#" class="social__link--mob">Instagram</a>
+            </li>
+            <li class="social__item--mob">
+              <a href="#" class="social__link--mob">Youtube</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero__container">
+          <p class="hero__label">A hair salon for men in Kyiv</p>
+          <h1 class="hero__title">BarberShop</h1>
+          <p class="hero__text">
+            Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
+            та зі смаком.
+          </p>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about__container">
+          <p class="about__label">про нас</p>
+          <h2 class="about__title">
+            Кращий Барбершоп<br />
+            твого міста
+          </h2>
+          <p class="about__text">
+            Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до
+            нас.
+          </p>
+          <p class="about__text">
+            Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін.
+            І коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш
+            бути тим самим. Ми команда, яка завжди з клієнтами "на одній хвилі".
+            Тому ми завжди готові вдосконалити кожного, хто до нас приходить!
+          </p>
+          <button type="button" class="button-order--about">
+            онлайн-запис
+          </button>
+        </div>
+      </section>
+
+      <section class="prices" id="prices">
+        <div class="prices__container">
+          <p class="prices__label">Проведи час у компанії кращих майстрів</p>
+          <h2 class="prices__title">Послуги та ціни</h2>
+          <div>
+            <ul class="prices__list">
+              <li class="prices__item">
+                <span>Чоловіча стрижка</span>
+                <span>від 300 грн</span>
+              </li>
+              <li class="prices__item">
+                <span>Стрижка бороди</span>
+                <span>від 200 грн</span>
+              </li>
+              <li class="prices__item">
+                <span>Стрижка вусів</span>
+                <span>від 200 грн</span>
+              </li>
+              <li class="prices__item">
+                <span>Гоління небезпечною бритвою</span>
+                <span>від 200 грн</span>
+              </li>
+              <li class="prices__item">
+                <span>Cтрижка у стажера</span>
+                <span>від 50 грн</span>
+              </li>
+              <li class="prices__item">
+                <span>Стрижка під насадку</span>
+                <span>від 200 грн</span>
+              </li>
+              <li class="prices__item">
+                <span>Дитяча стрижка (до 12 лет)</span>
+                <span>від 300 грн</span>
+              </li>
+              <li class="prices__item">
+                <span>Камуфлювання сивини</span>
+                <span>від 200 грн</span>
+              </li>
+            </ul>
+          </div>
+          <button type="button" class="button-prices">онлайн-запис</button>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="benefits__container">
+          <p class="benefits__label">стара традиційна школа</p>
+          <h2 class="benefits__title">Чому приходять саме до нас?</h2>
+          <p class="benefits__text">
+            Про нас говорять лише добре. Але краще 1 раз побачити і відчути, ніж
+            10 разів прочитати.
+          </p>
+          <ul class="benefits__list">
+            <li class="benefits__item">
+              <p class="benefits__qty">600</p>
+              Задоволених клієнтів на день
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__qty">50</p>
+              Нагород за відмінний сервіс
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__qty">20</p>
+              Найкращих майстрів Києва
+            </li>
+            <li class="benefits__item">
+              <p class="benefits__qty">100</p>
+              Подарунків постійним клієнтам
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="team" id="team">
+        <div class="team__container">
+          <p class="team__label">для справжніх поціновувачів атмосфери</p>
+          <h2 class="team__title">Наші майстри</h2>
+          <ul class="team__list">
+            <li class="team__item">
+              <div class="master">
+                <img src="./images/team/team_1.jpg" alt="master" width="418" />
+                <p class="master__name">John Smith</p>
+                <p class="master__descr">Extreme barber</p>
+                <ul class="join-me">
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="Instagram">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="Twitter">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="Facebook">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="LinkedIn">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="master">
+                <img src="./images/team/team_2.jpg" alt="master" width="418" />
+                <p class="master__name">Michele Doe</p>
+                <p class="master__descr">Extreme barber</p>
+                <ul class="join-me">
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="Instagram">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="Twitter">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="Facebook">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="LinkedIn">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="team__item">
+              <div class="master">
+                <img src="./images/team/team_3.jpg" alt="master" width="418" />
+                <p class="master__name">Alan Black</p>
+                <p class="master__descr">Extreme barber</p>
+                <ul class="join-me">
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="Instagram">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="Twitter">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="Facebook">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="join-me__link" aria-label="LinkedIn">
+                      <svg class="icon" width="20" height="20">
+                        <use href="./images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="facts">
+        <div class="facts__container">
+          <p class="facts__label">Латинською мовою "барба" означає "борода"</p>
+
+          <ul class="facts__list">
+            <li class="facts__item">
+              <img
+                class="facts__image"
+                src="./images/facts/img-1_sm@1x.jpg"
+                alt="interesting fact"
+                width="418"
+              />
+            </li>
+            <li class="facts__item">
+              <img
+                class="facts__image"
+                src="./images/facts/img-2_sm@1x.jpg"
+                alt="interesting fact"
+                width="418"
+              />
+            </li>
+            <li class="facts__item">
+              <img
+                class="facts__image"
+                src="./images/facts/img-3_sm@1x.jpg"
+                alt="interesting fact"
+                width="418"
+              />
+            </li>
+            <li class="facts__item">
+              <img
+                class="facts__image"
+                src="./images/facts/img-4_sm@1x.jpg"
+                alt="interesting fact"
+                width="418"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="reg">
+        <div class="reg__container">
+          <h2 class="reg__title">Онлайн-запис</h2>
+          <form action="">
+            <div class="reg__field">
+              <label class="reg__label" for="name">Ім'я* </label>
+              <input type="text" class="reg__input" id="name" />
+            </div>
+            <div class="reg__field">
+              <label class="reg__label" for="tel">Телефон* </label>
+              <input type="tel" id="tel" class="reg__input" />
+            </div>
+            <div class="reg__field">
+              <label class="reg__label" for="message">Повідомлення </label>
+              <textarea
+                class="reg__textarea"
+                name="comment"
+                rows="4"
+                id="message"
+              ></textarea>
+            </div>
+
+            <button type="button" class="button-send">відправити</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="contacts__main">
+          <h2 class="contacts__title">Контакти</h2>
+          <ul class="address__list">
+            <li class="address__item">
+              <svg class="contacts__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-cont-map"></use>
+              </svg>
+              вул. Василькова, 7А, Київ, 08132
+            </li>
+            <li class="address__item">
+              <svg class="contacts__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-cont-phone"></use>
+              </svg>
+              +38 044 111 11 11
+            </li>
+            <li class="address__item">
+              <svg class="contacts__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-cont-mail"></use>
+              </svg>
+              barbershop@email.com
+            </li>
+          </ul>
+        </div>
+
+        <div class="contacts__time">
+          <p class="contacts__label">час роботи</p>
+          <p class="address__item">Щоденно з 9:00 до 22:00</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <ul class="social__list">
+          <!-- <li class="social__item"></li> -->
+          <li class="social__item">
+            <a href="#" class="social__link">Instagram</a>
+          </li>
+          <li class="social__item">
+            <a href="#" class="social__link">Youtube</a>
+          </li>
+        </ul>
+        <p class="footer__copyr">&copy; Copyright 2022</p>
+      </div>
+    </footer>
+
+    <script src="./js/header.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>

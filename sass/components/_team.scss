@@ -1,0 +1,75 @@
+.team {
+    @extend .section;
+    background-color: #F7F7F7;
+}
+
+.team__container {
+    @extend .container;
+}
+
+.team__label {
+    @extend .label
+}
+
+.team__label::before {
+    content: '';
+    width: 60px;
+    height: 1px;
+    margin-right: 20px;
+    display: inline-block;
+    background-color: $color-primary;
+}
+
+.team__title {
+    @extend .section__title
+}
+
+.team__list {
+    margin-top: 44px;
+    list-style: none;
+}
+
+.team__item:not(:first-child) {
+    margin-top: 64px;
+}
+
+.master {
+    outline: 1px dashed blue;
+}
+
+.master__name {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.master__descr {
+    margin-top: 8px;
+    text-align: center;
+    color: #FF6C00;
+}
+
+.join-me {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    width: 206px;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.join-me__link {
+    @extend %join-link;
+    color: $color-primary;
+    background-color: #FFFFFF;
+
+    transition: color $duration $timing-function;        
+
+    &:hover,
+    &:focus {
+        color: $color-accent;
+        // background-color: $color-accent;
+    }
+}
