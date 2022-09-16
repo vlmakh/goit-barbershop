@@ -1,60 +1,67 @@
 .contacts {
-    @extend .section;
-    background-color: #191C26;
-    background-image: url(../../images/footer/bcg-footer-tab.png);
-    background-size: cover;
-    background-position: 50%;
-    background-repeat: no-repeat;
+  @extend .section;
+  background-color: #191c26;
+
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+
+  @media screen and (max-width: 480px) {
+    background-image: url("../../images/contacts/cont_sm@1x.png");
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: url("../../images/contacts/cont_md@1x.png");
+  }
 }
 
 .contacts__main {
-    @extend .container;
-    padding-bottom: 0;
+  @extend .container;
+  padding-bottom: 0;
 }
 
 .contacts__title {
-    @extend .section__title;
-    margin-top: 0;
-    text-align: center;
-    color: #FFFFFF;
+  @extend .section__title;
+  margin-top: 0;
+  text-align: center;
+  color: #ffffff;
 }
 
 .address__list {
-    list-style: none;
-    margin-top: 40px;
-
+  list-style: none;
+  margin-top: 40px;
 }
 
 .contacts__time {
-    @extend .container;
-    padding-top: 0;
-    margin-top: 44px;
+  @extend .container;
+  padding-top: 0;
+  margin-top: 44px;
 }
 
 .contacts__label {
-    @extend .label;
-    color: rgba(157, 164, 189, 0.6);
+  @extend .label;
+  color: rgba(157, 164, 189, 0.6);
 }
 
 .contacts__label::before {
-    content: "";
-    width: 60px;
-    height: 1px;
-    margin-right: 20px;
-    display: inline-block;
-    background-color: rgba(157, 164, 189, 0.6);
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  display: inline-block;
+  background-color: rgba(157, 164, 189, 0.6);
 }
 
 .address__item {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    font-size: 18px;
-    letter-spacing: 0.02em;
-    color: #9DA4BD;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  color: #9da4bd;
 }
 
 .contacts__icon {
-    @extend .icon;
-    margin-right: 16px;
+  @extend .icon;
+  margin-right: 16px;
 }
