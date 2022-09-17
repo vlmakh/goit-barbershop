@@ -22,9 +22,28 @@
 .facts__list {
   margin-top: 44px;
   list-style: none;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.facts__item {
+  @media screen and (min-width: 768px) {
+    width: calc((100% - 30px) / 2);
+  }
+
+  @media screen and (min-width: 1279px) {
+    width: calc((100% - 30px * 3) / 4);
+  }
 }
 
 .facts__item:not(:first-child) {
   margin-top: 30px;
-}
 
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+}

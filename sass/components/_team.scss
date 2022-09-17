@@ -5,6 +5,11 @@
 
 .team__container {
     @extend .container;
+
+    @media screen and (min-width: 768px) and (max-width: 1279px) {
+        padding-left: 159px;
+        padding-right: 159px;
+    }
 }
 
 .team__label {
@@ -27,14 +32,24 @@
 .team__list {
     margin-top: 44px;
     list-style: none;
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        gap: 30px;
+    }
 }
 
 .team__item:not(:first-child) {
     margin-top: 64px;
+
+    @media screen and (min-width: 1280px) {
+            margin-top: 0;
+        }
 }
 
-.master {
+.team__item {
     outline: 1px dashed blue;
+    width: 100%;
 }
 
 .master__name {
@@ -69,7 +84,6 @@
 
     &:hover,
     &:focus {
-        color: $color-accent;
-        // background-color: $color-accent;
+        color: $color-accent;        
     }
 }
