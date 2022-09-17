@@ -754,6 +754,26 @@ img {
   background-color: #FF6C00;
 }
 
+@media screen and (min-width: 1280px) {
+  .benefits__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .benefits__top {
+    width: 500px;
+  }
+}
+
 .benefits__label::before {
   content: "";
   width: 60px;
@@ -769,24 +789,35 @@ img {
 }
 
 .benefits__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
   margin-top: 44px;
   list-style: none;
-  outline: 1px dashed green;
+}
+@media screen and (min-width: 480px) {
+  .benefits__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    width: 418px;
+    margin-left: auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .benefits__list {
+    margin-left: 0;
+    margin-top: 0;
+  }
 }
 
 .benefits__item {
   padding: 20px 28px;
   width: 194px;
   height: 133px;
-  background-color: #F7F7F7;
+  background-color: #f7f7f7;
   font-size: 11px;
   font-weight: 600;
   text-align: center;
@@ -796,9 +827,17 @@ img {
           box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.benefits__item:nth-child(2n+1) {
-  margin-right: 30px;
-  margin-bottom: 30px;
+@media screen and (max-width: 479px) {
+  .benefits__item:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .benefits__item:nth-child(2n+1) {
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .benefits__qty {
@@ -809,7 +848,7 @@ img {
 
 .benefits__qty::after {
   content: "+";
-  color: #FF6C00;
+  color: #ff6c00;
   width: 13px;
   height: 22px;
   font-size: 13px;
