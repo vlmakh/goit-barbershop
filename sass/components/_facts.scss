@@ -1,31 +1,30 @@
 .facts {
-    @extend .section;
+  @extend .section;
 }
 
 .facts__container {
-    @extend .container;
+  @extend .container;
 }
 
 .facts__label {
-    @extend .label;
+  @extend .label;
 }
 
 .facts__label::before {
-    content: '';
-    width: 60px;
-    height: 1px;
-    margin-right: 20px;
-    display: inline-block;
-    background-color: $color-primary;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  display: inline-block;
+  background-color: $color-primary;
 }
 
 .facts__list {
-    margin-top: 44px;
-    list-style: none;
-   
-    
+  margin-top: 44px;
+  list-style: none;
 }
 
 .facts__item:not(:first-child) {
-    margin-top: 30px;
+  margin-top: 30px;
 }
+
