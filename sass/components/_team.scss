@@ -1,89 +1,88 @@
 .team {
-    @extend .section;
-    background-color: #F7F7F7;
+  @extend .section;
+  background-color: #f7f7f7;
 }
 
 .team__container {
-    @extend .container;
+  @extend .container;
 
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        padding-left: 159px;
-        padding-right: 159px;
-    }
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    padding-left: 159px;
+    padding-right: 159px;
+  }
 }
 
 .team__label {
-    @extend .label
+  @extend .label;
 }
 
 .team__label::before {
-    content: '';
-    width: 60px;
-    height: 1px;
-    margin-right: 20px;
-    display: inline-block;
-    background-color: $color-primary;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  display: inline-block;
+  background-color: $color-primary;
 }
 
 .team__title {
-    @extend .section__title
+  @extend .section__title;
 }
 
 .team__list {
-    margin-top: 44px;
-    list-style: none;
+  margin-top: 44px;
+  list-style: none;
 
-    @media screen and (min-width: 1280px) {
-        display: flex;
-        gap: 30px;
-    }
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .team__item:not(:first-child) {
-    margin-top: 64px;
+  margin-top: 64px;
 
-    @media screen and (min-width: 1280px) {
-            margin-top: 0;
-        }
+  @media screen and (min-width: 1280px) {
+    margin-top: 0;
+  }
 }
 
 .team__item {
-    outline: 1px dashed blue;
-    width: 100%;
+  outline: 1px dashed blue;
+  width: 100%;
 }
 
 .master__name {
-    margin-top: 30px;
-    text-align: center;
-    font-size: 18px;
-
+  margin-top: 30px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .master__descr {
-    margin-top: 8px;
-    text-align: center;
-    color: #FF6C00;
+  margin-top: 8px;
+  text-align: center;
+  color: #ff6c00;
 }
 
 .join-me {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    width: 206px;
-    margin-top: 16px;
-    margin-left: auto;
-    margin-right: auto;
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+  width: 206px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .join-me__link {
-    @extend %join-link;
-    color: $color-primary;
-    background-color: #FFFFFF;
+  @extend %join-link;
+  color: $color-primary;
+  background-color: #ffffff;
 
-    transition: color $duration $timing-function;        
+  transition: color $duration $timing-function;
 
-    &:hover,
-    &:focus {
-        color: $color-accent;        
-    }
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
 }
