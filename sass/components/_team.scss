@@ -1,6 +1,6 @@
 .team {
   @extend .section;
-  background-color: #f7f7f7;
+  background-color: $color-bcg-accent;
 }
 
 .team__container {
@@ -60,7 +60,7 @@
 .master__descr {
   margin-top: 8px;
   text-align: center;
-  color: #ff6c00;
+  color: $color-accent;
 }
 
 .join-me {
@@ -76,7 +76,7 @@
 .join-me__link {
   @extend %join-link;
   color: $color-primary;
-  background-color: #ffffff;
+  background-color: $color-bcg;
 
   transition: color $duration $timing-function;
 

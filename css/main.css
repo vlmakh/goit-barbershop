@@ -321,7 +321,7 @@ body {
   color: #303030;
   font-family: "Open Sans", sans-serif;
   font-size: 14px;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   line-height: 1.36;
   font-family: "Open Sans", sans-serif;
 }
@@ -389,9 +389,7 @@ img {
 
 .text, .benefits__text, .about__text, .hero__text {
   margin-top: 20px;
-  font-weight: 400;
   font-size: 16px;
-  letter-spacing: 0.02em;
 }
 
 .label, .contacts__label, .facts__label, .team__label, .benefits__label, .prices__label, .about__label {
@@ -633,6 +631,58 @@ img {
   color: #9da4bd;
 }
 
+@media screen and (min-width: 768px) {
+  .about__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__container {
+    gap: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about__images {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about__images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__images {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .about__descr {
+    width: 330px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__descr {
+    width: 500px;
+  }
+}
+
 .about__label::before {
   content: "";
   width: 60px;
@@ -642,23 +692,57 @@ img {
   background-color: #303030;
 }
 
-.about__title {
-  font-size: 28px;
+@media screen and (max-width: 1279px) {
+  .about__title {
+    font-size: 28px;
+  }
+}
+
+.about__text--main {
+  margin-top: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.62;
+  color: #555555;
+}
+@media screen and (max-width: 1279px) {
+  .about__text--main {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__text--main {
+    font-size: 18px;
+  }
 }
 
 .about__text {
-  line-height: 1.36;
+  line-height: 1.85;
+  font-size: 14px;
   color: #555555;
 }
 
 .button-order--about {
-  margin-top: 50px;
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-order--about:hover, .button-order--about:focus {
   background-color: #FF6C00;
   color: #FFFFFF;
+}
+@media screen and (max-width: 767px) {
+  .button-order--about {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .button-order--about {
+    margin-top: 85px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .button-order--about {
+    margin-top: 45px;
+  }
 }
 
 .prices {
@@ -858,7 +942,7 @@ img {
 }
 
 .team {
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
@@ -912,7 +996,7 @@ img {
 .master__descr {
   margin-top: 8px;
   text-align: center;
-  color: #ff6c00;
+  color: #FF6C00;
 }
 
 .join-me {
@@ -931,7 +1015,7 @@ img {
 
 .join-me__link {
   color: #303030;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -1108,7 +1192,7 @@ img {
 }
 
 .footer {
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
 }
 
 .footer__container {

@@ -72,24 +72,79 @@
 
       <section class="about" id="about">
         <div class="about__container">
-          <p class="about__label">про нас</p>
-          <h2 class="about__title">
-            Кращий Барбершоп<br />
-            твого міста
-          </h2>
-          <p class="about__text">
-            Якщо ти хочеш додати у свій образ більше впевненості, тобі точно до
-            нас.
-          </p>
-          <p class="about__text">
-            Ми команда, яка ніколи не зупиняється на досягнутому і прагне змін.
-            І коли ти потрапиш до рук нашого майстра, то вже ніколи не зможеш
-            бути тим самим. Ми команда, яка завжди з клієнтами "на одній хвилі".
-            Тому ми завжди готові вдосконалити кожного, хто до нас приходить!
-          </p>
-          <button type="button" class="button-order--about">
-            онлайн-запис
-          </button>
+          <div class="about__images">
+            <picture>
+              <source
+                srcset="
+                  ./images/about/about-1_md@1x.jpg 1x,
+                  ./images/about/about-1_md@2x.jpg 2x
+                "
+                media="(min-width: 768px) and (max-width: 1279px)"
+                type="image/jpg"
+              />
+              <source
+                srcset="
+                  ./images/about/about-1_lg@1x.jpg 1x,
+                  ./images/about/about-1_lg@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+                type="image/jpg"
+              />
+              <img
+                src="./images/about/about-1_md@1x.jpg"
+                alt="picture"
+                width="330"
+                loading="lazy"
+              />
+            </picture>
+
+            <picture>
+              <source
+                srcset="
+                  ./images/about/about-2_md@1x.jpg 1x,
+                  ./images/about/about-2_md@2x.jpg 2x
+                "
+                media="(min-width: 768px) and (max-width: 1279px)"
+                type="image/jpg"
+              />
+              <source
+                srcset="
+                  ./images/about/about-2_lg@1x.jpg 1x,
+                  ./images/about/about-2_lg@2x.jpg 2x
+                "
+                media="(min-width: 1280px)"
+                type="image/jpg"
+              />
+              <img
+                src="./images/about/about-2_md@1x.jpg"
+                alt="picture"
+                width="330"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="about__descr">
+            <p class="about__label">про нас</p>
+            <h2 class="about__title">
+              Кращий Барбершоп<br />
+              твого міста
+            </h2>
+            <p class="about__text--main">
+              Якщо ти хочеш додати у свій образ більше впевненості, тобі точно
+              до нас.
+            </p>
+            <p class="about__text">
+              Ми команда, яка ніколи не зупиняється на досягнутому і прагне
+              змін. І коли ти потрапиш до рук нашого майстра, то вже ніколи не
+              зможеш бути тим самим. Ми команда, яка завжди з клієнтами "на
+              одній хвилі". Тому ми завжди готові вдосконалити кожного, хто до
+              нас приходить!
+            </p>
+            <button type="button" class="button-order--about">
+              онлайн-запис
+            </button>
+          </div>
         </div>
       </section>
 

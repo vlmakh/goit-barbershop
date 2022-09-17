@@ -1,46 +1,111 @@
 .about {
-    @extend .section;
+  @extend .section;
 }
 
 .about__container {
-    @extend .container;
+  @extend .container;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    gap: 64px;
+  }
+}
+
+.about__images {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    width: 570px;
+  }
+}
+
+.about__descr {
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+  }
 }
 
 .about__label {
-    @extend .label;
-
+  @extend .label;
 }
 
 .about__label::before {
-    content: '';
-    width: 60px;
-    height: 1px;
-    margin-right: 20px;
-    display: inline-block;
-    background-color: $color-primary;
+  content: "";
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  display: inline-block;
+  background-color: $color-primary;
 }
 
 .about__title {
-    @extend .section__title;
+  @extend .section__title;
+
+  @media screen and (max-width: 1279px) {
     font-size: 28px;
+  }
+}
+
+.about__text--main {
+  margin-top: 20px;
+  letter-spacing: 0.02em;
+  line-height: 1.62;
+  color: $color-secondary;
+
+  @media screen and (max-width: 1279px) {
+    font-size: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
 }
 
 .about__text {
-   @extend .text;
-        line-height: 1.36;
-        
-        color: #555555;
+  @extend .text;
+  line-height: 1.85;
+  font-size: 14px;
+  color: $color-secondary;
 }
 
 .button-order--about {
-    @extend %button;
-    margin-top: 50px;
-    
-    transition: color $duration $timing-function,
+  @extend %button;
+
+  transition: color $duration $timing-function,
     background-color $duration $timing-function;
 
-    &:hover, &:focus {
-        background-color: $color-accent;
-        color: $color-bcg;
-    }
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+    color: $color-bcg;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-top: 50px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-top: 85px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 45px;
+  }
 }
