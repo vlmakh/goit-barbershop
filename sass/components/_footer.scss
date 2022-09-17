@@ -1,18 +1,29 @@
 .footer {
-   padding: 44px 31px;
+  background-color: #f7f7f7;
 }
 
 .footer__container {
-   @extend .container;
-   padding: 0;
+  @extend .container;
+  padding-top: 44px;
+  padding-bottom: 44px;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
 }
 
-
-
 .footer__copyr {
-   margin-top: 20px;
-   font-size: 11px;
-   font-weight: 600;
-   letter-spacing: 0.2em;
-   color: #9DA4BD;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  color: #9da4bd;
+
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+  }
 }
