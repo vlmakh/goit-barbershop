@@ -590,12 +590,12 @@ img {
 }
 @media screen and (max-width: 480px) {
   .hero {
-    background-image: url("/images/hero/hero-bcg-mob.jpg");
+    background-image: url("../images/hero/hero-bcg-mob.jpg");
   }
 }
 @media screen and (min-width: 481px) {
   .hero {
-    background-image: url("/images/hero/hero-bcg-tab-3.jpg");
+    background-image: url("../images/hero/hero-bcg-tab-3.jpg");
   }
 }
 
@@ -754,12 +754,12 @@ img {
 }
 @media screen and (max-width: 480px) {
   .prices {
-    background-image: url("../../images/prices/img_sm@1x.png");
+    background-image: url("../images/prices/img_sm@1x.png");
   }
 }
 @media screen and (min-width: 481px) {
   .prices {
-    background-image: url("../../images/prices/img_md@1x.png");
+    background-image: url("../images/prices/img_md@1x.png");
   }
 }
 
@@ -1132,12 +1132,12 @@ img {
 }
 @media screen and (max-width: 480px) {
   .contacts {
-    background-image: url("../../images/contacts/cont_sm@1x.png");
+    background-image: url("../images/contacts/cont_sm@1x.png");
   }
 }
 @media screen and (min-width: 481px) {
   .contacts {
-    background-image: url("../../images/contacts/cont_md@1x.png");
+    background-image: url("../images/contacts/cont_md@1x.png");
   }
 }
 
