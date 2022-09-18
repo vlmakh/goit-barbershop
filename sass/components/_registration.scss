@@ -1,65 +1,68 @@
 .reg {
-    @extend .section;
-    background-color: #191C26;
-    color: #FFFFFF;
+  @extend .section;
+  background-color: #191c26;
+  color: #ffffff;
 }
 
 .reg__container {
-    @extend .container;
-    text-align: center;
+  @extend .container;
+  text-align: center;
 }
 
 .reg__title {
-    @extend.section__title;
-    margin-top: 0;
-    text-align: center;
-    color: #FFFFFF;
+  @extend.section__title;
+  margin-top: 0;
+  text-align: center;
+  color: #ffffff;
+}
+
+.reg__required {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 30px;
+  }
 }
 
 .reg__field {
-    position: relative;
-    margin-top: 44px;
-        
-    // outline: 1px dashed white;
+  position: relative;
+  margin-top: 44px;
+  flex-grow: 1;
 }
 
 .reg__label {
-    position: absolute;
-    top: -10px;
-    left: 0;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-
+  position: absolute;
+  top: -10px;
+  left: 0;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
 }
 .reg__input {
-    width: 100%;
-    padding: 8px 4px;
-    
-    background-color: #191C26;
-    color: #FFFFFF;
-    outline: #191C26;
-    border: none;
-    border-bottom: 1px solid rgba(157, 164, 189, 0.4);
-    
+  width: 100%;
+  padding: 8px 4px;
+
+  background-color: #191c26;
+  color: #ffffff;
+  outline: #191c26;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 }
 
 .reg__textarea {
-    width: 100%;
-        padding: 8px 4px;
-    resize: none;
-        background-color: #191C26;
-        color: #FFFFFF;
-        outline: #191C26;
-        border: none;
-        border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+  width: 100%;
+  padding: 8px 4px;
+  resize: none;
+  background-color: #191c26;
+  color: #ffffff;
+  outline: #191c26;
+  border: none;
+  border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 }
 
 .button-send {
-    @extend %button;
-    margin-top: 44px;
-    color: #FFFFFF;
-    background-color: transparent;
-    
+  @extend %button;
+  margin-top: 44px;
+  color: #ffffff;
+  background-color: transparent;
 }

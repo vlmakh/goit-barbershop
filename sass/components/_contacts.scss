@@ -8,16 +8,54 @@
 
   @media screen and (max-width: 480px) {
     background-image: url("../images/contacts/cont_sm@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/contacts/cont_sm@2x.png");
+    }
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 481px) and (max-width: 1279px) {
     background-image: url("../images/contacts/cont_md@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/contacts/cont_md@2x.png");
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url("../images/contacts/cont_lg@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/contacts/cont_lg@2x.png");
+    }
   }
 }
 
-.contacts__main {
+.contacts__container {
   @extend .container;
-  padding-bottom: 0;
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding-left: 100px;
+  }
+}
+
+// --------------- Address
+.contacts__main {
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
 }
 
 .contacts__title {
@@ -32,15 +70,25 @@
   margin-top: 40px;
 }
 
+// --------------- Worktime
+
 .contacts__time {
-  @extend .container;
-  padding-top: 0;
-  margin-top: 44px;
+  @media screen and (max-width: 767px) {
+    margin-top: 44px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 330px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 64px;
+  }
 }
 
 .contacts__label {
   @extend .label;
-  color: rgba(157, 164, 189, 0.6);
+  color: $color-bcg;
 }
 
 .contacts__label::before {

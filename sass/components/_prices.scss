@@ -7,12 +7,34 @@
   background-repeat: no-repeat;
 
   @media screen and (max-width: 480px) {
-      background-image: url("../images/prices/img_sm@1x.png");
+    background-image: url("../images/prices/img_sm@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/prices/img_sm@2x.png");
     }
-  
-    @media screen and (min-width: 481px) {
-      background-image: url("../images/prices/img_md@1x.png");
+  }
+
+  @media screen and (min-width: 481px) and (max-width: 1279px) {
+    background-image: url("../images/prices/img_md@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/prices/img_md@2x.png");
     }
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url("../images/prices/img_lg@1x.png");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/prices/img_lg@2x.png");
+    }
+  }
 }
 
 .prices__container {
@@ -45,7 +67,22 @@
   padding: 30px;
 
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-  outline: 1px dashed red;
+  // outline: 1px dashed red;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-content: space-between;
+    height: 240px;
+  }
+}
+
+.prices__item:not(:first-child) {
+  @media screen and (max-width: 1279px) {
+    margin-top: 20px;
+  }
 }
 
 .prices__item {
@@ -56,6 +93,13 @@
   font-size: 14px;
   line-height: 2.14;
   color: #9da4bd;
+
+  // outline: 1px dashed yellow;
+
+  @media screen and (min-width: 1280px) {
+    width: 500px;
+    margin-top: 0;
+  }
 }
 
 .prices__item span:first-child {
@@ -63,26 +107,21 @@
 }
 
 .prices__item::before {
-  content: '';
+  content: "";
   height: 1px;
   flex-grow: 1;
   background-color: rgba(157, 164, 189, 0.12);
 }
 
-.prices__item:not(:first-child) {
-  margin-top: 20px;
-}
-
 .button-prices {
   @extend %button;
   margin-top: 50px;
-   
+
   color: $color-bcg;
 
   transition: background-color $duration $timing-function;
-  
-    &:hover {
-      background-color: $color-accent;
-      
-    }
+
+  &:hover {
+    background-color: $color-accent;
+  }
 }
