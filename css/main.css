@@ -348,10 +348,6 @@ img {
   height: auto;
 }
 
-.section, .contacts, .reg, .facts, .team, .benefits, .prices, .about, .hero {
-  outline: 1px dashed green;
-}
-
 .section__title, .contacts__title, .reg__title, .team__title, .benefits__title, .prices__title, .about__title {
   font-family: "Raleway", sans-serif;
   margin-top: 20px;
@@ -366,7 +362,6 @@ img {
 .container, .footer__container, .contacts__container, .reg__container, .facts__container, .team__container, .benefits__container, .prices__container, .about__container, .hero__container, .page-header__container {
   margin-left: auto;
   margin-right: auto;
-  outline: 1px dashed blue;
 }
 @media screen and (max-width: 767px) {
   .container, .footer__container, .contacts__container, .reg__container, .facts__container, .team__container, .benefits__container, .prices__container, .about__container, .hero__container, .page-header__container {
@@ -1206,13 +1201,27 @@ img {
   }
 }
 
-.reg {
+.reg-contacts {
   background-color: #191c26;
   color: #ffffff;
+}
+@media screen and (min-width: 1280px) {
+  .reg-contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .reg__container {
   text-align: center;
+}
+@media screen and (min-width: 1280px) {
+  .reg__container {
+    padding: 130px 50px;
+    margin-right: 0;
+    width: 640px;
+  }
 }
 
 .reg__title {
@@ -1275,39 +1284,41 @@ img {
   background-color: transparent;
 }
 
-.contacts {
+.contacts__sub {
   background-color: #191c26;
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
 }
 @media screen and (max-width: 480px) {
-  .contacts {
+  .contacts__sub {
     background-image: url("../images/contacts/cont_sm@1x.png");
   }
 }
 @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
-  .contacts {
+  .contacts__sub {
     background-image: url("../images/contacts/cont_sm@2x.png");
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1279px) {
-  .contacts {
+  .contacts__sub {
     background-image: url("../images/contacts/cont_md@1x.png");
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 1279px) and (min-resolution: 2dppx) {
-  .contacts {
+  .contacts__sub {
     background-image: url("../images/contacts/cont_md@2x.png");
   }
 }
 @media screen and (min-width: 1280px) {
-  .contacts {
+  .contacts__sub {
     background-image: url("../images/contacts/cont_lg@1x.png");
+    margin-right: auto;
+    width: 640px;
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
-  .contacts {
+  .contacts__sub {
     background-image: url("../images/contacts/cont_lg@2x.png");
   }
 }

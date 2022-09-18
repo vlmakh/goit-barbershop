@@ -3,43 +3,33 @@
   top: 0;
   left: 0;
   width: 100%;
-  
+
   z-index: 100;
-
-  
-
-   
 }
 
 .page-header__container {
   @extend .container;
 
   @media screen and (max-width: 767px) {
-      padding-top: 30px;
-        padding-bottom: 20px;
-    }
-  
-    @media screen and (min-width: 768px) {
-      padding-top: 0;
-        padding-bottom: 0;
+    padding-top: 30px;
+    padding-bottom: 20px;
+  }
 
-        display: flex;
-          align-items: center;
-    }
-  
-    
+  @media screen and (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    display: flex;
+    align-items: center;
+  }
 }
 
 .logo {
   display: inline-block;
-  // position: relative;
-  // left: 31px;
-
-  
 }
 
 .logo__img {
-@media screen and (max-width: 767px) {
+  @media screen and (max-width: 767px) {
     fill: inherit;
   }
 
@@ -50,10 +40,8 @@
 
 nav {
   @media screen and (max-width: 767px) {
-      display: none;
-    }
-
-        
+    display: none;
+  }
 }
 
 .nav__list {
@@ -64,17 +52,15 @@ nav {
 .nav__item {
   margin-left: 24px;
   padding-top: 52px;
-    padding-bottom: 52px;
+  padding-bottom: 52px;
   @media screen and (min-width: 1280px) {
-      margin-left: 40px;
-    }
+    margin-left: 40px;
+  }
 }
 
 .nav__link {
-  
   text-decoration: none;
   color: $color-bcg;
-  
 }
 
 .mobile-menu-button {
@@ -90,7 +76,6 @@ nav {
   @media screen and (min-width: 768px) {
     display: none;
   }
-
 }
 
 .button-order--header {
@@ -102,10 +87,10 @@ nav {
 
   &:hover,
   &:focus {
-    background-color: $color-accent;    
+    background-color: $color-accent;
   }
 
-    @media screen and (max-width: 767px) {
-      display: none;
-    }
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }

@@ -31,9 +31,9 @@ img {
   height: auto;
 }
 
-.section {
-  outline: 1px dashed green;
-}
+// .section {
+//   outline: 1px dashed green;
+// }
 
 .section__title {
   font-family: "Raleway", sans-serif;
@@ -51,7 +51,7 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  outline: 1px dashed blue;
+  // outline: 1px dashed blue;
 
   @media screen and (max-width: 767px) {
     max-width: 480px;

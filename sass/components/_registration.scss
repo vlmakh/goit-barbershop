@@ -1,12 +1,23 @@
-.reg {
-  @extend .section;
+.reg-contacts {
+//   @extend .section;
   background-color: #191c26;
   color: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    display: flex;
+  }
 }
 
 .reg__container {
   @extend .container;
   text-align: center;
+
+  @media screen and (min-width: 1280px) {
+    // max-width: 1280px;
+    padding: 130px 50px;
+    margin-right: 0;
+    width: 640px;
+  }
 }
 
 .reg__title {
