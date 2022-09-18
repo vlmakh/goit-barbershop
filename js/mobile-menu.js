@@ -7,7 +7,7 @@ const refs = {
 
 refs.openModalBtn.addEventListener("click", toggleModal);
 refs.closeMobilBtn.addEventListener("click", toggleModal);
-// refs.navMenu.addEventListener("click", toggleModal);
+refs.mobMenu.addEventListener("click", toggleModal);
 
 function toggleModal() {
   refs.mobMenu.classList.toggle("is-open");

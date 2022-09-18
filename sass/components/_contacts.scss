@@ -104,15 +104,28 @@
 }
 
 .address__item {
-  display: flex;
-  align-items: center;
+  
   margin-top: 20px;
-  font-size: 18px;
-  letter-spacing: 0.02em;
-  color: #9da4bd;
+  
+}
+
+.address__link {
+  display: flex;
+    align-items: center;
+    font-size: 18px;
+      letter-spacing: 0.02em;
+      color: #9da4bd;
+  text-decoration: none;
 }
 
 .contacts__icon {
   @extend .icon;
   margin-right: 16px;
+}
+
+.contacts__worktime {
+  margin-top: 20px;
+  font-size: 18px;
+    letter-spacing: 0.02em;
+    color: #9da4bd;
 }

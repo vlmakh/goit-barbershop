@@ -114,10 +114,10 @@ img {
   letter-spacing: 0.2em;
   color: $color-primary;
   text-decoration: none;
-  transition: color;
+  transition: color $duration $timing-function;
 
   &:hover,
   &:focus {
-    color: $color-accent $duration $timing-function;
+    color: $color-accent;
   }
 }

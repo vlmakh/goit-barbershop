@@ -76,4 +76,9 @@
   margin-top: 44px;
   color: #ffffff;
   background-color: transparent;
+  transition: background-color $duration $timing-function;
+
+  &:hover, &:focus {
+    background-color: $color-accent;
+  }
 }

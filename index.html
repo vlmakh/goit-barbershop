@@ -11,17 +11,10 @@
   <body>
     <header class="page-header" data-header>
       <div class="page-header__container">
-        <a href="#" class="logo">
-          <img
-            class="logo__img"
-            src="./images/logo.svg"
-            alt="logo"
-            width="69"
-            height="56"
-          />
-          <!-- <svg width="69" height="56" class="logo__img">
-          <use href="./images/logo.svg"></use>
-        </svg> -->
+        <a href="#" class="logo__link">
+          <svg class="icon" width="69" height="56">
+            <use href="./images/icons.svg#logo"></use>
+          </svg>
         </a>
 
         <nav>
@@ -42,8 +35,8 @@
         </nav>
 
         <button type="button" class="mobile-menu-button" data-menu-open>
-          <svg width="24" height="24">
-            <use class="icon" href="./images/icons.svg#icon-menu"></use>
+          <svg class="icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu"></use>
           </svg>
         </button>
         <button type="button" class="button-order--header">онлайн-запис</button>
@@ -53,7 +46,7 @@
     <div class="backdrop" data-menu>
       <div class="mobile-menu">
         <button type="button" class="mobile-close-button" data-menu-close>
-          <svg width="30" height="30">
+          <svg class="icon" width="30" height="30">
             <use class="icon" href="./images/icons.svg#mobile-close"></use>
           </svg>
         </button>
@@ -74,15 +67,19 @@
             </li>
           </ul>
         </div>
-        <p class="mob-menu__cont">+38 044 111 11 11</p>
+        <a href="tel:+380441111111" class="mob-menu__cont">+38 044 111 11 11</a>
         <button type="button" class="button-order--mob">онлайн-запис</button>
         <ul class="social__list--mob">
           <!-- <li class="social__item"></li> -->
           <li class="social__item--mob">
-            <a href="#" class="social__link--mob">Instagram</a>
+            <a href="#" class="social__link--mob" aria-label="Instagram"
+              >Instagram</a
+            >
           </li>
           <li class="social__item--mob">
-            <a href="#" class="social__link--mob">Youtube</a>
+            <a href="#" class="social__link--mob" aria-label="Youtube"
+              >Youtube</a
+            >
           </li>
         </ul>
       </div>
@@ -611,11 +608,23 @@
             <div class="reg__required">
               <div class="reg__field">
                 <label class="reg__label" for="name">Ім'я* </label>
-                <input type="text" class="reg__input" id="name" />
+                <input
+                  type="text"
+                  class="reg__input"
+                  id="name"
+                  placeholder="Jacob Mercer"
+                  required
+                />
               </div>
               <div class="reg__field">
                 <label class="reg__label" for="tel">Телефон* </label>
-                <input type="tel" id="tel" class="reg__input" />
+                <input
+                  type="tel"
+                  id="tel"
+                  class="reg__input"
+                  placeholder="+38 000 000 00 00"
+                  required
+                />
               </div>
             </div>
 
@@ -639,29 +648,35 @@
               <h2 class="contacts__title">Контакти</h2>
               <ul class="address__list">
                 <li class="address__item">
-                  <svg class="contacts__icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-cont-map"></use>
-                  </svg>
-                  вул. Василькова, 7А, Київ, 08132
+                  <a href="#" class="address__link">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-cont-map"></use>
+                    </svg>
+                    вул. Василькова, 7А, Київ, 08132
+                  </a>
                 </li>
                 <li class="address__item">
-                  <svg class="contacts__icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-cont-phone"></use>
-                  </svg>
-                  +38 044 111 11 11
+                  <a href="tel:+380441111111" class="address__link">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-cont-phone"></use>
+                    </svg>
+                    +38 044 111 11 11
+                  </a>
                 </li>
                 <li class="address__item">
-                  <svg class="contacts__icon" width="24" height="24">
-                    <use href="./images/icons.svg#icon-cont-mail"></use>
-                  </svg>
-                  barbershop@email.com
+                  <a href="mailto:barbershop@email.com" class="address__link">
+                    <svg class="contacts__icon" width="24" height="24">
+                      <use href="./images/icons.svg#icon-cont-mail"></use>
+                    </svg>
+                    barbershop@email.com
+                  </a>
                 </li>
               </ul>
             </div>
 
             <div class="contacts__time">
               <p class="contacts__label">час роботи</p>
-              <p class="address__item">Щоденно з 9:00 до 22:00</p>
+              <p class="contacts__worktime">Щоденно з 9:00 до 22:00</p>
             </div>
           </div>
         </div>
@@ -672,10 +687,12 @@
       <div class="footer__container">
         <ul class="social__list">
           <li class="social__item">
-            <a href="#" class="social__link">Instagram</a>
+            <a href="#" class="social__link" aria-label="Instagram"
+              >Instagram</a
+            >
           </li>
           <li class="social__item">
-            <a href="#" class="social__link">Youtube</a>
+            <a href="#" class="social__link" aria-label="Youtube">Youtube</a>
           </li>
         </ul>
         <p class="footer__copyr">&copy; Copyright 2022</p>
