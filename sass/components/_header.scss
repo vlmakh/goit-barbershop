@@ -48,14 +48,16 @@ nav {
 
 .nav__item {
   margin-left: 24px;
-  padding-top: 52px;
-  padding-bottom: 52px;
+  
   @media screen and (min-width: 1280px) {
     margin-left: 40px;
   }
 }
 
 .nav__link {
+  display: block;
+  padding-top: 52px;
+  padding-bottom: 52px;
   text-decoration: none;
   color: $color-bcg;
   transition: color $duration $timing-function;
