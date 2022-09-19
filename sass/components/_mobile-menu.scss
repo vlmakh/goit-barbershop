@@ -10,7 +10,6 @@
 
   opacity: 0;
   pointer-events: none;
-  // visibility: hidden;
 
   transition: opacity $duration $timing-function;
 }
@@ -18,7 +17,6 @@
 .is-open {
   opacity: 1;
   pointer-events: initial;
-  // visibility: visible;
 }
 
 .mobile-menu {
@@ -37,21 +35,21 @@
   }
 }
 
-.mobile-close-button {
-  display: block;
-  margin-left: auto;
+// .mobile-close-button {
+//   display: block;
+//   margin-left: auto;
 
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  transition: color $duration $timing-function;
-  
-    &:hover,
-    &:focus {
-      color: $color-accent;
-    }
-}
+//   padding: 0;
+//   border: none;
+//   background-color: transparent;
+//   cursor: pointer;
+//   transition: color $duration $timing-function;
+
+//     &:hover,
+//     &:focus {
+//       color: $color-accent;
+//     }
+// }
 
 .mob-nav__list {
   margin-top: 40px;
