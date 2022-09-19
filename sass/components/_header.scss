@@ -9,6 +9,7 @@
 
 .page-header__container {
   @extend .container;
+  position: relative;
 
   @media screen and (max-width: 767px) {
     padding-top: 30px;
@@ -29,10 +30,10 @@
   color: $color-bcg;
   transition: color $duration $timing-function;
 
-  &:hover, &:focus-visible
-    {
-      color: $color-accent;
-    }
+  &:hover,
+  &:focus-visible {
+    color: $color-accent;
+  }
 }
 
 nav {
@@ -48,7 +49,7 @@ nav {
 
 .nav__item {
   margin-left: 24px;
-  
+
   @media screen and (min-width: 1280px) {
     margin-left: 40px;
   }
@@ -62,8 +63,18 @@ nav {
   color: $color-bcg;
   transition: color $duration $timing-function;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $color-accent;
+  }
+}
+
+.page-header__phone {
+  @extend .nav__link;
+  margin-left: auto;
+
+  @media screen and (max-width: 1279px) {
+    display: none;
   }
 }
 
@@ -84,7 +95,7 @@ nav {
 
 .button-order--header {
   @extend %button;
-  margin-left: auto;
+
   color: $color-bcg;
 
   transition: background-color $duration $timing-function;
@@ -96,5 +107,13 @@ nav {
 
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 40px;
   }
 }

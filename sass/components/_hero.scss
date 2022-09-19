@@ -1,13 +1,14 @@
 .hero {
   // @extend .section;
 
-  background-color: $color-bcg-secondary;
+  
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
   @media screen and (max-width: 480px) {
+    background-color: $color-bcg-secondary;
     background-image: url("../images/hero/hero-bcg-mob.jpg");
 
     @media (min-device-pixel-ratio: 2),
@@ -18,21 +19,13 @@
   }
 
   @media screen and (min-width: 481px) and (max-width: 1279px) {
+    background-color: $color-bcg-secondary;
     background-image: url("../images/hero/hero-bcg-tab-3.jpg");
+
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
       background-image: url("../images/hero/hero-bcg-tab-3@2x.jpg");
-    }
-  }
-
-  @media screen and (min-width: 1280px) {
-    background-image: url("../images/hero/hero-bcg-desk-3.jpg");
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-bcg-desk-3@2x.jpg");
     }
   }
 }
@@ -41,8 +34,22 @@
   position: relative;
   @extend .container;
   padding-top: 208px;
-
   height: 580px;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media screen and (min-width: 1280px) {
+    background-color: $color-bcg-secondary;
+    background-image: url("../images/hero/hero-bcg-desk-3.jpg");
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url("../images/hero/hero-bcg-desk-3@2x.jpg");
+    }
+  }
 }
 
 .hero__label {

@@ -35,8 +35,8 @@
       background-image: url("../images/contacts/cont_lg@2x.png");
     }
 
-    margin-right: auto;
-    width: 640px;
+    // margin-right: auto;
+    width: calc(100vw / 2);
   }
 }
 
