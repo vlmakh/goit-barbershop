@@ -74,7 +74,6 @@
         <a href="tel:+380441111111" class="mob-menu__cont">+38 044 111 11 11</a>
         <button type="button" class="button-order--mob">онлайн-запис</button>
         <ul class="social__list--mob">
-          <!-- <li class="social__item"></li> -->
           <li class="social__item--mob">
             <a href="#" class="social__link--mob" aria-label="Instagram"
               >Instagram</a
@@ -623,14 +622,11 @@
               </div>
               <div class="reg__field">
                 <input
-                  type="tel"
+                  type="text"
                   id="tel"
                   class="reg__input"
-                  placeholder="+38 000 000 00 00"
+                  placeholder="+38(000)000-00-00"
                   required
-                  pattern="\+?[0-9\s\-\(\)]+"
-                  minlength="10"
-                  maxlength="13"
                 />
                 <label class="reg__label" for="tel">Телефон* </label>
               </div>
@@ -708,6 +704,8 @@
       </div>
     </footer>
 
+    <script src="https://unpkg.com/imask"></script>
+    <script src="./js/input-phone.js"></script>
     <script src="./js/header.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
