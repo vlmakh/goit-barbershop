@@ -326,6 +326,10 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1,
 h2,
 h3,
@@ -1277,12 +1281,18 @@ img {
 
 .reg__label {
   position: absolute;
-  top: -10px;
-  left: 0;
+  top: 4px;
+  left: 8px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .reg__input {
@@ -1294,6 +1304,56 @@ img {
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
 }
+.reg__input::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reg__input::-moz-placeholder {
+  color: transparent;
+  -moz-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reg__input:-ms-input-placeholder {
+  color: transparent;
+  -ms-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reg__input::-ms-input-placeholder {
+  color: transparent;
+  -ms-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reg__input::placeholder {
+  color: transparent;
+  -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.reg__input:hover::-webkit-input-placeholder, .reg__input:focus::-webkit-input-placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+.reg__input:hover::-moz-placeholder, .reg__input:focus::-moz-placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+.reg__input:hover:-ms-input-placeholder, .reg__input:focus:-ms-input-placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+.reg__input:hover::-ms-input-placeholder, .reg__input:focus::-ms-input-placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+.reg__input:hover::placeholder, .reg__input:focus::placeholder {
+  color: rgba(157, 164, 189, 0.4);
+}
+.reg__input:not(:-moz-placeholder-shown) + .reg__label {
+  transform: translateY(-24px);
+}
+.reg__input:not(:-ms-input-placeholder) + .reg__label {
+  transform: translateY(-24px);
+}
+.reg__input:hover + .reg__label, .reg__input:focus + .reg__label, .reg__input:not(:placeholder-shown) + .reg__label {
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
+}
 
 .reg__textarea {
   width: 100%;
@@ -1304,6 +1364,31 @@ img {
   outline: #191c26;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+}
+.reg__textarea::-webkit-input-placeholder {
+  color: transparent;
+}
+.reg__textarea::-moz-placeholder {
+  color: transparent;
+}
+.reg__textarea:-ms-input-placeholder {
+  color: transparent;
+}
+.reg__textarea::-ms-input-placeholder {
+  color: transparent;
+}
+.reg__textarea::placeholder {
+  color: transparent;
+}
+.reg__textarea:not(:-moz-placeholder-shown) + .reg__label {
+  transform: translateY(-24px);
+}
+.reg__textarea:not(:-ms-input-placeholder) + .reg__label {
+  transform: translateY(-24px);
+}
+.reg__textarea:hover + .reg__label, .reg__textarea:focus + .reg__label, .reg__textarea:not(:placeholder-shown) + .reg__label {
+  -webkit-transform: translateY(-24px);
+          transform: translateY(-24px);
 }
 
 .button-send {
@@ -1346,7 +1431,7 @@ img {
 @media screen and (min-width: 1280px) {
   .contacts__sub {
     background-image: url("../images/contacts/cont_lg@1x.png");
-    width: 50vw;
+    width: calc(50vw - 10px);
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {

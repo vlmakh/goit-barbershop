@@ -1,5 +1,5 @@
 .reg-contacts {
-//   @extend .section;
+  //   @extend .section;
   background-color: #191c26;
   color: #ffffff;
 
@@ -42,12 +42,14 @@
 
 .reg__label {
   position: absolute;
-  top: -10px;
-  left: 0;
+  top: 4px;
+  left: 8px;
   font-size: 11px;
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  transform: translateY(0);
+  transition: transform $duration $timing-function;
 }
 .reg__input {
   width: 100%;
@@ -58,6 +60,22 @@
   outline: #191c26;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  &::placeholder {
+    color: transparent;
+    transition: color $duration $timing-function;
+  }
+
+  &:hover::placeholder,
+  &:focus::placeholder {
+    color: rgba(157, 164, 189, 0.4);
+  }
+
+  &:hover + .reg__label,
+  &:focus + .reg__label,
+  &:not(:placeholder-shown) + .reg__label {
+    transform: translateY(-24px);
+  }
 }
 
 .reg__textarea {
@@ -69,6 +87,16 @@
   outline: #191c26;
   border: none;
   border-bottom: 1px solid rgba(157, 164, 189, 0.4);
+
+  &::placeholder {
+    color: transparent;
+  }
+
+  &:hover + .reg__label,
+  &:focus + .reg__label,
+  &:not(:placeholder-shown) + .reg__label {
+    transform: translateY(-24px);
+  }
 }
 
 .button-send {
@@ -78,7 +106,8 @@
   background-color: transparent;
   transition: background-color $duration $timing-function;
 
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: $color-accent;
   }
 }

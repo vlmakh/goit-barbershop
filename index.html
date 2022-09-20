@@ -611,35 +611,40 @@
           <form action="">
             <div class="reg__required">
               <div class="reg__field">
-                <label class="reg__label" for="name">Ім'я* </label>
                 <input
                   type="text"
                   class="reg__input"
                   id="name"
                   placeholder="Jacob Mercer"
+                  minlength="3"
                   required
                 />
+                <label class="reg__label" for="name">Ім'я* </label>
               </div>
               <div class="reg__field">
-                <label class="reg__label" for="tel">Телефон* </label>
                 <input
                   type="tel"
                   id="tel"
                   class="reg__input"
                   placeholder="+38 000 000 00 00"
                   required
+                  pattern="\+?[0-9\s\-\(\)]+"
+                  minlength="10"
+                  maxlength="13"
                 />
+                <label class="reg__label" for="tel">Телефон* </label>
               </div>
             </div>
 
             <div class="reg__field">
-              <label class="reg__label" for="message">Повідомлення </label>
               <textarea
                 class="reg__textarea"
                 name="comment"
                 rows="4"
                 id="message"
+                placeholder="type your message"
               ></textarea>
+              <label class="reg__label" for="message">Повідомлення </label>
             </div>
 
             <button class="button-send" type="submit">відправити</button>
