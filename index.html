@@ -1,17 +1,25 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
+    <meta
+      name="description"
+      content="BarberShop. Кращий барбершоп твого міста. Експерт чоловічих стрижкок"
+    />
     <title>Best BarberShop</title>
   </head>
 
   <body>
     <header class="page-header" data-header>
       <div class="page-header__container">
-        <a href="#" class="logo__link">
+        <a href="#" class="logo__link" aria-labe="logo" id="logo">
           <svg class="icon" width="69" height="56">
             <use href="./images/icons.svg#logo"></use>
           </svg>
@@ -38,7 +46,12 @@
           >+38 044 111 11 11</a
         >
 
-        <button type="button" class="mobile-menu-button" data-menu-open>
+        <button
+          type="button"
+          class="mobile-menu-button"
+          data-menu-open
+          aria-label="Open menu"
+        >
           <svg class="icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -91,12 +104,118 @@
     <main>
       <section class="hero">
         <div class="hero__container">
-          <p class="hero__label">A hair salon for men in Kyiv</p>
-          <h1 class="hero__title">BarberShop</h1>
-          <p class="hero__text">
-            Ми експерти у модних чоловічих стрижках. Працюємо швидко, обережно
-            та зі смаком.
-          </p>
+          <div class="hero__sidebar">
+            <ul class="social__list--hero">
+              <li class="social__item--hero">
+                <a href="#" class="social__link--hero" aria-label="Instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li class="social__item--hero">
+                <a href="#" class="social__link--hero" aria-label="Youtube"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero__left-wrap">
+            <div class="hero__titlebox">
+              <p class="hero__label">A hair salon for men in Kyiv</p>
+              <h1 class="hero__title">BarberShop</h1>
+              <p class="hero__text">
+                Ми експерти у модних чоловічих стрижках. Працюємо швидко,
+                обережно та зі смаком.
+              </p>
+            </div>
+
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <picture class="swiper-slide">
+                  <source
+                    srcset="
+                      ./images/hero/slider1_lg.jpg    1x,
+                      ./images/hero/slider1_lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/hero/slider1_md.jpg    1x,
+                      ./images/hero/slider1_md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/hero/slider1_md.jpg"
+                    alt="barba"
+                    width="1121"
+                    height="680"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <picture class="swiper-slide">
+                  <source
+                    srcset="
+                      ./images/hero/slider2_lg.jpg    1x,
+                      ./images/hero/slider2_lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/hero/slider2_md.jpg    1x,
+                      ./images/hero/slider2_md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/hero/slider2_md.jpg"
+                    alt="barba"
+                    width="1121"
+                    height="680"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <picture class="swiper-slide">
+                  <source
+                    srcset="
+                      ./images/hero/slider3_md.jpg    1x,
+                      ./images/hero/slider3_md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1279px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/hero/slider3_lg.jpg    1x,
+                      ./images/hero/slider3_lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/hero/slider3_md.jpg"
+                    alt="barba"
+                    width="1121"
+                    height="680"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <ul class="swiper__controls">
+            <li class="swiper-button-next swiper__button">Вперед</li>
+            <li class="swiper-button-prev swiper__button">Назад</li>
+          </ul>
         </div>
       </section>
 
@@ -289,6 +408,7 @@
                   src="./images/team/img-1@1x_sm.jpg"
                   alt="master"
                   width="450"
+                  height="346"
                 />
               </picture>
 
@@ -355,6 +475,7 @@
                   src="./images/team/img-2@1x_sm.jpg"
                   alt="master"
                   width="450"
+                  height="346"
                 />
               </picture>
               <p class="master__name">Michele Doe</p>
@@ -420,6 +541,7 @@
                   src="./images/team/img-3@1x_sm.jpg"
                   alt="master"
                   width="450"
+                  height="346"
                 />
               </picture>
               <p class="master__name">Alan Black</p>
@@ -495,6 +617,7 @@
                   src="./images/facts/img-1_sm@1x.jpg"
                   alt="interesting fact"
                   width="418"
+                  height="360"
                 />
               </picture>
             </li>
@@ -529,6 +652,7 @@
                   src="./images/facts/img-2_sm@1x.jpg"
                   alt="interesting fact"
                   width="418"
+                  height="360"
                 />
               </picture>
             </li>
@@ -563,6 +687,7 @@
                   src="./images/facts/img-3_sm@1x.jpg"
                   alt="interesting fact"
                   width="418"
+                  height="360"
                 />
               </picture>
             </li>
@@ -597,6 +722,7 @@
                   src="./images/facts/img-4_sm@1x.jpg"
                   alt="interesting fact"
                   width="418"
+                  height="360"
                 />
               </picture>
             </li>
@@ -706,6 +832,10 @@
 
     <script src="https://unpkg.com/imask"></script>
     <script src="./js/input-phone.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+
     <script src="./js/header.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>

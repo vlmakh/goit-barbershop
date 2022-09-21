@@ -1,55 +1,89 @@
 .hero {
   // @extend .section;
-
-  
+  background-color: $color-bcg-secondary;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media screen and (max-width: 480px) {
-    background-color: $color-bcg-secondary;
+  @media screen and (max-width: 767px) {
     background-image: url("../images/hero/hero-bcg-mob.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-bcg-mob@2x.jpg");
-    }
-  }
-
-  @media screen and (min-width: 481px) and (max-width: 1279px) {
-    background-color: $color-bcg-secondary;
-    background-image: url("../images/hero/hero-bcg-tab-3.jpg");
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-bcg-tab-3@2x.jpg");
+      background-image: url("../images/hero/hero-bcg-mob2x.jpg");
     }
   }
 }
 
 .hero__container {
-  position: relative;
   @extend .container;
-  padding-top: 208px;
-  height: 580px;
+  position: relative;
+  padding: 0;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media screen and (min-width: 1280px) {
-    background-color: $color-bcg-secondary;
-    background-image: url("../images/hero/hero-bcg-desk-3.jpg");
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-bcg-desk-3@2x.jpg");
-    }
+  @media screen and (max-width: 767px) {
+    height: 580px;
+    padding-top: 200px;
+    padding-left: 31px;
   }
+
+  @media screen and (min-width: 768px) {
+    height: 680px;
+    display: flex;
+  }
+
+  
+}
+
+.hero__sidebar {
+  background-color: $color-bcg;
+  padding: 20px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 159px;
+  }
+}
+
+.social__list--hero {
+  @extend .social__list;
+  transform: rotate(-90deg) translateX(-360px);
+}
+
+.social__link--hero {
+  @extend .social__link;
+  font-size: 14px;
+}
+
+.social__item--hero {
+  @extend .social__item;
+}
+
+.hero__left-wrap {
+  overflow: hidden;
+}
+
+.hero__titlebox {
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 270px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    transform: translateX(-80%);
+  }
+
+  z-index: 300;
 }
 
 .hero__label {
@@ -65,12 +99,17 @@
 .hero__title {
   margin-top: 20px;
   font-family: "Raleway";
-  font-style: normal;
   font-weight: 700;
-  font-size: 48px;
   letter-spacing: 0.05em;
-  font-family: "Raleway";
   color: #ffffff;
+
+  @media screen and (max-width: 1279px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 72px;
+  }
 }
 
 .hero__text {
@@ -79,4 +118,67 @@
 
   width: 306px;
   color: #9da4bd;
+  @media screen and (min-width: 1280px) {
+    font-size: 18px;
+    width: 500px;
+  }
+}
+
+// -------------- Slider Swiper ---------------------
+
+.swiper {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  height: 100%;
+}
+
+.swiper__controls {
+  position: relative;
+  width: 164px;
+  height: 40px;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+  }
+}
+
+.swiper__button {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  width: 60px;
+  height: 24px;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+  align-items: flex-start;
+}
+
+.swiper-button-prev {
+  justify-content: left;
+}
+
+.swiper-button-next {
+  justify-content: right;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  content: none;
 }
