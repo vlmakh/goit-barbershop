@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ua">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -15,7 +15,7 @@
   <body>
     <header class="page-header" data-header>
       <div class="page-header__container">
-        <a href="#" class="logo__link">
+        <a href="#" class="logo__link" aria-labe="logo" id="logo">
           <svg class="icon" width="69" height="56">
             <use href="./images/icons.svg#logo"></use>
           </svg>
@@ -42,7 +42,12 @@
           >+38 044 111 11 11</a
         >
 
-        <button type="button" class="mobile-menu-button" data-menu-open>
+        <button
+          type="button"
+          class="mobile-menu-button"
+          data-menu-open
+          aria-label="Open menu"
+        >
           <svg class="icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -204,12 +209,12 @@
                 </picture>
               </div>
             </div>
-
-            <!-- <div class="swiper-button-prev">Назад</div>
-            <div class="swiper-button-next">Вперед</div> -->
-            <button class="swiper-button-prev">Назад</button>
-            <button class="swiper-button-next">Вперед</button>
           </div>
+
+          <ul class="swiper__controls">
+            <li class="swiper-button-next swiper__button">Вперед</li>
+            <li class="swiper-button-prev swiper__button">Назад</li>
+          </ul>
         </div>
       </section>
 

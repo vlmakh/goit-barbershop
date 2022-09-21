@@ -6,76 +6,65 @@
   background-position: center;
   background-size: cover;
 
-  @media screen and (max-width: 480px) {
-    background-color: $color-bcg-secondary;
-    background-image: url("../images/hero/slider3_sm.jpg");
+  @media screen and (max-width: 767px) {
+    background-image: url("../images/hero/hero-bcg-mob.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/hero/slider3_sm@2x.jpg");
+      background-image: url("../images/hero/hero-bcg-mob2x.jpg");
     }
   }
 }
 
 .hero__container {
-  position: relative;
   @extend .container;
+  position: relative;
   padding: 0;
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     height: 580px;
+    padding-top: 200px;
+    padding-left: 31px;
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     height: 680px;
     display: flex;
-
-    // background-color: $color-bcg-secondary;
-    // background-image: url("../images/hero/slider3_md.jpg");
-
-    // @media (min-device-pixel-ratio: 2),
-    // (min-resolution: 192dpi),
-    // (min-resolution: 2dppx) {
-    //   background-image: url("../images/hero/slider3_md@2x.jpg");
-    // }
   }
 
-  @media screen and (min-width: 1280px) {
-    background-color: $color-bcg-secondary;
-    background-image: url("../images/hero/slider3_lg.jpg");
+  // @media screen and (min-width: 1280px) {
+  //   background-color: $color-bcg-secondary;
+  //   background-image: url("../images/hero/slider3_lg.jpg");
 
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url("../images/hero/slider3_lg@2x.jpg");
-    }
-  }
+  //   @media (min-device-pixel-ratio: 2),
+  //     (min-resolution: 192dpi),
+  //     (min-resolution: 2dppx) {
+  //     background-image: url("../images/hero/slider3_lg@2x.jpg");
+  //   }
+  // }
 }
 
 .hero__sidebar {
-  // height: 100%;
   background-color: $color-bcg;
   padding: 20px;
 
-  @media screen and (max-width: 480px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     width: 159px;
   }
 }
 
 .social__list--hero {
   @extend .social__list;
-  // margin-top: 64px;
-  // flex-direction: column;
-  transform: rotate(-90deg) 
+  transform: rotate(-90deg) translateX(-360px);
 }
 
 .social__link--hero {
@@ -87,27 +76,18 @@
   @extend .social__item;
 }
 
-// .social__item--hero:not(:first-child) {
-//   margin-top: 24px;
-//   margin-left: 60px;
-// }
-
-
-
 .hero__left-wrap {
   overflow: hidden;
-  // position: relative;
-  // width: 100%;
-
-  // background-color: $color-bcg-secondary;
 }
 
 .hero__titlebox {
-  @media screen and (min-width: 481px) {
+  @media screen and (min-width: 768px) {
     position: absolute;
-    left: 120px;
+    left: 50%;
+    transform: translateX(-50%);
     top: 270px;
   }
+
   z-index: 300;
 }
 
@@ -143,19 +123,57 @@
 // -------------- Slider Swiper
 
 .swiper {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     display: none;
   }
 }
 
-// .swiper-slide img {
-//   object-fit: cover;
-// }
+.swiper__controls {
+  position: relative;
+  width: 164px;
+  height: 40px;
 
-.swiper-button-next,
-.swiper-button-prev {
-  width: 80px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    list-style: none;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 30px;
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+  }
 }
+
+.swiper__button {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  width: 60px;
+  height: 24px;
+
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+  background-color: transparent;
+  border-bottom: 1px solid #ffffff;
+  align-items: flex-start;
+  // margin: 0;
+  // top: 90%;
+}
+
+.swiper-button-prev {
+  justify-content: left;
+ }
+
+ .swiper-button-next {
+   justify-content: right;
+ }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
