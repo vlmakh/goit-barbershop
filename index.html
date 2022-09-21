@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
     <title>Best BarberShop</title>
   </head>
@@ -91,7 +95,20 @@
     <main>
       <section class="hero">
         <div class="hero__container">
-          <div class="hero__sidebar"></div>
+          <div class="hero__sidebar">
+            <ul class="social__list--hero">
+              <li class="social__item--hero">
+                <a href="#" class="social__link--hero" aria-label="Instagram"
+                  >Instagram</a
+                >
+              </li>
+              <li class="social__item--hero">
+                <a href="#" class="social__link--hero" aria-label="Youtube"
+                  >Youtube</a
+                >
+              </li>
+            </ul>
+          </div>
 
           <div class="hero__left-wrap">
             <div class="hero__titlebox">
@@ -102,6 +119,96 @@
                 обережно та зі смаком.
               </p>
             </div>
+
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <picture class="swiper-slide">
+                  <source
+                    srcset="
+                      ./images/slider/slider1_lg.jpg    1x,
+                      ./images/slider/slider1_lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider/slider1_md.jpg    1x,
+                      ./images/slider/slider1_md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/slider/slider1_md.jpg"
+                    alt="barba"
+                    width="609"
+                    height="680"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <picture class="swiper-slide">
+                  <source
+                    srcset="
+                      ./images/slider/slider2_lg.jpg    1x,
+                      ./images/slider/slider2_lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                    type="image/jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/slider/slider2_md.jpg    1x,
+                      ./images/slider/slider2_md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/slider/slider2_md.jpg"
+                    alt="barba"
+                    width="609"
+                    height="680"
+                    loading="lazy"
+                  />
+                </picture>
+
+                <picture class="swiper-slide">
+                  <source
+                    srcset="
+                      ./images/slider/slider3_md.jpg    1x,
+                      ./images/slider/slider3_md@2x.jpg 2x
+                    "
+                    media="(min-width: 768px) and (max-width: 1279px)"
+                    type="image/jpg"
+                  />
+
+                  <source
+                    srcset="
+                      ./images/slider/slider3_lg.jpg    1x,
+                      ./images/slider/slider3_lg@2x.jpg 2x
+                    "
+                    media="(min-width: 1280px)"
+                    type="image/jpg"
+                  />
+                  <img
+                    src="./images/slider/slider3_md.jpg"
+                    alt="barba"
+                    width="609"
+                    height="680"
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <!-- <div class="swiper-button-prev">Назад</div>
+            <div class="swiper-button-next">Вперед</div> -->
+            <button class="swiper-button-prev">Назад</button>
+            <button class="swiper-button-next">Вперед</button>
           </div>
         </div>
       </section>
@@ -712,6 +819,10 @@
 
     <script src="https://unpkg.com/imask"></script>
     <script src="./js/input-phone.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/slider.js"></script>
+
     <script src="./js/header.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
