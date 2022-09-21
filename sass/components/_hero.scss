@@ -9,47 +9,91 @@
 
   @media screen and (max-width: 480px) {
     background-color: $color-bcg-secondary;
-    background-image: url("../images/hero/hero-bcg-mob.jpg");
+    background-image: url("../images/hero/slider3_sm.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-bcg-mob@2x.jpg");
+      background-image: url("../images/hero/slider3_sm@2x.jpg");
     }
   }
 
-  @media screen and (min-width: 481px) and (max-width: 1279px) {
-    background-color: $color-bcg-secondary;
-    background-image: url("../images/hero/hero-bcg-tab-3.jpg");
-
-    @media (min-device-pixel-ratio: 2),
-      (min-resolution: 192dpi),
-      (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-bcg-tab-3@2x.jpg");
-    }
-  }
+  
 }
+
+
 
 .hero__container {
   position: relative;
   @extend .container;
-  padding-top: 208px;
-  height: 580px;
+  padding: 0;
+  
 
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 
+  @media screen and (max-width: 480px) {
+    height: 580px;
+   }
+
+
+  @media screen and (min-width: 481px)  {
+    height: 680px;
+      display: flex;
+      
+      
+
+      // background-color: $color-bcg-secondary;
+      // background-image: url("../images/hero/slider3_md.jpg");
+  
+      // @media (min-device-pixel-ratio: 2),
+      // (min-resolution: 192dpi),
+      // (min-resolution: 2dppx) {
+      //   background-image: url("../images/hero/slider3_md@2x.jpg");
+      // }
+    }
+
   @media screen and (min-width: 1280px) {
     background-color: $color-bcg-secondary;
-    background-image: url("../images/hero/hero-bcg-desk-3.jpg");
+    background-image: url("../images/hero/slider3_lg.jpg");
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-bcg-desk-3@2x.jpg");
+      background-image: url("../images/hero/slider3_lg@2x.jpg");
     }
   }
+}
+
+.hero__sidebar {
+  // height: 100%;
+
+  @media screen and (max-width: 480px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 481px) {
+    width: 159px;
+  }
+
+}
+
+.hero__left-wrap {
+  position: relative;
+  width: 100%;
+  
+  
+  background-color: $color-bcg-secondary;
+}
+
+.hero__titlebox {
+  @media screen and (min-width: 481px) {
+      position: absolute;
+      left: 120px;
+      top: 270px;
+    }
+
 }
 
 .hero__label {

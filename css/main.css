@@ -685,43 +685,69 @@ img {
 @media screen and (max-width: 480px) {
   .hero {
     background-color: #191C26;
-    background-image: url("../images/hero/hero-bcg-mob.jpg");
+    background-image: url("../images/hero/slider3_sm.jpg");
   }
 }
 @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero/hero-bcg-mob@2x.jpg");
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 1279px) {
-  .hero {
-    background-color: #191C26;
-    background-image: url("../images/hero/hero-bcg-tab-3.jpg");
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 1279px) and (min-resolution: 2dppx) {
-  .hero {
-    background-image: url("../images/hero/hero-bcg-tab-3@2x.jpg");
+    background-image: url("../images/hero/slider3_sm@2x.jpg");
   }
 }
 
 .hero__container {
   position: relative;
-  padding-top: 208px;
-  height: 580px;
+  padding: 0;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media screen and (max-width: 480px) {
+  .hero__container {
+    height: 580px;
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero__container {
+    height: 680px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
 @media screen and (min-width: 1280px) {
   .hero__container {
     background-color: #191C26;
-    background-image: url("../images/hero/hero-bcg-desk-3.jpg");
+    background-image: url("../images/hero/slider3_lg.jpg");
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero__container {
-    background-image: url("../images/hero/hero-bcg-desk-3@2x.jpg");
+    background-image: url("../images/hero/slider3_lg@2x.jpg");
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero__sidebar {
+    display: none;
+  }
+}
+@media screen and (min-width: 481px) {
+  .hero__sidebar {
+    width: 159px;
+  }
+}
+
+.hero__left-wrap {
+  position: relative;
+  width: 100%;
+  background-color: #191C26;
+}
+
+@media screen and (min-width: 481px) {
+  .hero__titlebox {
+    position: absolute;
+    left: 120px;
+    top: 270px;
   }
 }
 
