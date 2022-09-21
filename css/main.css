@@ -691,12 +691,12 @@ img {
 }
 @media screen and (max-width: 767px) {
   .hero {
-    background-image: url("../images/hero/hero-bcg-mob.jpg");
+    background-image: url("../images/hero/hero-bcg-mob.webp");
   }
 }
 @media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url("../images/hero/hero-bcg-mob2x.jpg");
+    background-image: url("../images/hero/hero-bcg-mob@2x.webp");
   }
 }
 
@@ -1006,32 +1006,32 @@ img {
 }
 @media screen and (max-width: 480px) {
   .prices {
-    background-image: url("../images/prices/img_sm@1x.png");
+    background-image: url("../images/prices/img_sm@1x.webp");
   }
 }
 @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
   .prices {
-    background-image: url("../images/prices/img_sm@2x.png");
+    background-image: url("../images/prices/img_sm@2x.webp");
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1279px) {
   .prices {
-    background-image: url("../images/prices/img_md@1x.png");
+    background-image: url("../images/prices/img_md@1x.webp");
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 1279px) and (min-resolution: 2dppx) {
   .prices {
-    background-image: url("../images/prices/img_md@2x.png");
+    background-image: url("../images/prices/img_md@2x.webp");
   }
 }
 @media screen and (min-width: 1280px) {
   .prices {
-    background-image: url("../images/prices/img_lg@1x.png");
+    background-image: url("../images/prices/img_lg@1x.webp");
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .prices {
-    background-image: url("../images/prices/img_lg@2x.png");
+    background-image: url("../images/prices/img_lg@2x.webp");
   }
 }
 
@@ -1540,33 +1540,33 @@ img {
 }
 @media screen and (max-width: 480px) {
   .contacts__sub {
-    background-image: url("../images/contacts/cont_sm@1x.png");
+    background-image: url("../images/contacts/cont_sm@1x.webp");
   }
 }
 @media screen and (max-width: 480px) and (min-device-pixel-ratio: 2), screen and (max-width: 480px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 480px) and (min-resolution: 192dpi), screen and (max-width: 480px) and (min-resolution: 2dppx) {
   .contacts__sub {
-    background-image: url("../images/contacts/cont_sm@2x.png");
+    background-image: url("../images/contacts/cont_sm@2x.webp");
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1279px) {
   .contacts__sub {
-    background-image: url("../images/contacts/cont_md@1x.png");
+    background-image: url("../images/contacts/cont_md@1x.webp");
   }
 }
 @media screen and (min-width: 481px) and (max-width: 1279px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 1279px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (max-width: 1279px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (max-width: 1279px) and (min-resolution: 2dppx) {
   .contacts__sub {
-    background-image: url("../images/contacts/cont_md@2x.png");
+    background-image: url("../images/contacts/cont_md@2x.webp");
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts__sub {
-    background-image: url("../images/contacts/cont_lg@1x.png");
+    background-image: url("../images/contacts/cont_lg@1x.webp");
     width: calc(50vw - 10px);
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .contacts__sub {
-    background-image: url("../images/contacts/cont_lg@2x.png");
+    background-image: url("../images/contacts/cont_lg@2x.webp");
   }
 }
 
