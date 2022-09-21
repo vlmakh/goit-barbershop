@@ -8,9 +8,9 @@ function changeHeaderBackground() {
 
   if (pageOffset > headerOffsetTrigger) {
     header.classList.add("no-transparency");
-    logo.classList.remove("logo__link--black");
+    logo.classList.remove("black");
   } else {
     header.classList.remove("no-transparency");
-    logo.classList.add("logo__link--black");
+    logo.classList.add("black");
   }
 }
