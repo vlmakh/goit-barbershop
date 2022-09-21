@@ -7,12 +7,12 @@
   background-size: cover;
 
   @media screen and (max-width: 767px) {
-    background-image: url("../images/hero/hero-bcg-mob.jpg");
+    background-image: url("../images/hero/hero-bcg-mob.webp");
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-bcg-mob2x.jpg");
+      background-image: url("../images/hero/hero-bcg-mob@2x.webp");
     }
   }
 }
@@ -36,8 +36,6 @@
     height: 680px;
     display: flex;
   }
-
-  
 }
 
 .hero__sidebar {
@@ -168,6 +166,14 @@
   background-color: transparent;
   border-bottom: 1px solid #ffffff;
   align-items: flex-start;
+  transition: color $duration $timing-function,
+    border-color $duration $timing-function;
+
+  &:hover,
+  &:focus-visible {
+    color: $color-accent;
+    border-color: $color-accent;
+  }
 }
 
 .swiper-button-prev {
