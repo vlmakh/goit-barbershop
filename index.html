@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ua">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,12 +19,7 @@
   <body>
     <header class="page-header" data-header>
       <div class="page-header__container">
-        <a
-          href="#"
-          class="logo__link logo__link--black"
-          aria-labe="logo"
-          id="logo"
-        >
+        <a href="#" class="logo__link black" aria-labe="logo" id="logo">
           <svg class="icon" width="69" height="56">
             <use href="./images/icons.svg#logo"></use>
           </svg>
@@ -54,8 +49,8 @@
         <button
           type="button"
           class="mobile-menu-button"
+          aria-label="Menu"
           data-menu-open
-          aria-label="Open menu"
         >
           <svg class="icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
@@ -67,12 +62,6 @@
 
     <div class="backdrop" data-menu>
       <div class="mobile-menu">
-        <!-- <button type="button" class="mobile-close-button" data-menu-close>
-          <svg class="icon" width="30" height="30">
-            <use class="icon" href="./images/icons.svg#mobile-close"></use>
-          </svg>
-        </button> -->
-
         <div>
           <ul class="mob-nav__list" data-nav>
             <li class="mob-nav__item">
@@ -248,6 +237,7 @@
                 src="./images/about/about-1_md@1x.jpg"
                 alt="picture"
                 width="330"
+                height="445"
                 loading="lazy"
               />
             </picture>
@@ -273,6 +263,7 @@
                 src="./images/about/about-2_md@1x.jpg"
                 alt="picture"
                 width="330"
+                height="445"
                 loading="lazy"
               />
             </picture>
