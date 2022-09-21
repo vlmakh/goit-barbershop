@@ -857,11 +857,17 @@ img {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1), border-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (max-width: 767px) {
   .swiper__button {
     display: none;
   }
+}
+.swiper__button:hover, .swiper__button:focus-visible {
+  color: #FF6C00;
+  border-color: #FF6C00;
 }
 
 .swiper-button-prev {
