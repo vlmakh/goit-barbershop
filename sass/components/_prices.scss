@@ -1,5 +1,4 @@
 .prices {
-  // @extend .section;
   background-color: #111319;
   background-image: url();
   background-size: cover;
@@ -67,7 +66,6 @@
   padding: 30px;
 
   background: linear-gradient(180deg, #171a24 0%, rgba(23, 26, 36, 0.2) 100%);
-  // outline: 1px dashed red;
 
   @media screen and (min-width: 1280px) {
     display: flex;
@@ -93,8 +91,6 @@
   font-size: 14px;
   line-height: 2.14;
   color: #9da4bd;
-
-  // outline: 1px dashed yellow;
 
   @media screen and (min-width: 1280px) {
     width: 500px;
